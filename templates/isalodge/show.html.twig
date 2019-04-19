@@ -4,11 +4,18 @@
 
     <article>
         <h2>{{ article.title }}</h2>
-        <div class="metadat">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la categorie Politique</div>
+        <div class="metadat">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la catégorie {{ article.category.title }} </div>
         <div class="content">
         <img src="{{ article.image }}" alt="">
             {{ article.content | raw }}
         </div>
     </article>
 
+    <section id="commentaires">
+        <div class="comment">
+            <div class="row">
+            </div> 
+        </div>
+    </section>
+    
 {% endblock %}
