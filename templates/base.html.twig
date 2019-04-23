@@ -22,6 +22,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('isalodge_create') }}">CREER UN ARTICLE</a>
                     </li>
+                    {% if not app.user %}
+
+                    <li class="nav-item">
+                        <a href="{{ path('security_login') }}" class="nav-link">
+                            Connexion
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a href= "{{ path('security_logout') }}" class="nav-link">
+                          Déconnexion
+                        </a>
+                    </li>
+                    {% endif %}
                     </ul>
                 </div>
         </nav>
