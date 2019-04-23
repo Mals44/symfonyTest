@@ -24,6 +24,12 @@ security:
                 login_path: security_login
                 check_path: security_login
 
+            logout:
+                path: security_logout
+                target: isalodge
+
+
+
             # activate different ways to authenticate
 
             # http_basic: true
