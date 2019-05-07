@@ -75,8 +75,6 @@ class IsalodgeController extends AbstractController
         ]);
 
     }
-
-
     /**
      * @Route("/isalodge/{id}", name= "isalodge_show")
      */
@@ -100,10 +98,7 @@ class IsalodgeController extends AbstractController
             'article' => $article,
             'commentForm' => $form->createView()
         ]);
+
     }
-
-
-
+    
 }
-
-
