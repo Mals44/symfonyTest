@@ -1,4 +1,6 @@
 {
+    "name": "isalodge",
+    "description": "papotage",
     "type": "project",
     "license": "proprietary",
     "require": {
